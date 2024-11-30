@@ -2,7 +2,10 @@
 Filter utility. Removes unwanted UTF-8 characters from yaml, JSON and
 other text-files.
 
-* Allows ASCII and Swedish UTF-8 characters (ÅÄÖ åäö)
+## Allowed characters
+* ASCII
+* Swedish UTF-8 characters (ÅÄÖ åäö) 🇸🇪
+* Danish/Norwegian UTF-8 characters (ÆØÅ æøå) 🇩🇰🇳🇴
 
 * All other characters are ignored
 

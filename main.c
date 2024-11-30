@@ -55,6 +55,10 @@ int main(int argc, char **argv) {
                 case 0x85: /* Å */
                 case 0x84: /* Ä */
                 case 0x96: /* Ö */
+                case 0x98: /* Ø */
+                case 0x86: /* Æ */
+                case 0xA6: /* æ */
+                case 0xB8: /* ø */
                 putchar(ch);
                 putchar(ch2);
                 break;
