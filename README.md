@@ -1,5 +1,5 @@
 # skandinav
-Filter utility. Removes unwanted non-space UTF-8 characters from yaml, JSON and
+Filter utility. Removes unwanted UTF-8 characters from yaml, JSON and
 other text-files.
 
 * Allows ASCII and Swedish UTF-8 characters (ÅÄÖ åäö)
