@@ -20,12 +20,15 @@
 #include <stdio.h>
 
 int main(int argc, char **argv) {
+    unsigned char ch = 0;
+    unsigned char ch2 = 0;
+    FILE *in = NULL;
     if (argc != 2) {
         fprintf(stderr, "Usage: skandinav filename\n");
         return -1;
     }
 
-    FILE *in = fopen(argv[1], "rb");
+    in = fopen(argv[1], "rb");
     if (in == NULL) {
         fprintf(stderr, "Failed to open file\n");
         return -1;
@@ -33,8 +36,6 @@ int main(int argc, char **argv) {
 
     fseek(in, 0, SEEK_SET);
 
-    unsigned char ch = 0;
-    unsigned char ch2 = 0;
     while (fread(&ch, 1, 1, in) == 1) {
         const unsigned int val = ch & 0x80;
         if (val == 0) {
@@ -48,12 +49,12 @@ int main(int argc, char **argv) {
                 return -1;
             }
             switch (ch2) {
-                case 0xA5: // å
-                case 0xA4: // ä
-                case 0xB6: // ö
-                case 0x85: // Å
-                case 0x84: // Ä
-                case 0x96: // Ö
+                case 0xA5: /* å */
+                case 0xA4: /* ä */
+                case 0xB6: /* ö */
+                case 0x85: /* Å */
+                case 0x84: /* Ä */
+                case 0x96: /* Ö */
                 putchar(ch);
                 putchar(ch2);
                 break;

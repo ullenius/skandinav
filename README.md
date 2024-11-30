@@ -22,7 +22,7 @@ Run:
 ```
 
 ## Requirements
-C99
+C89
 
 ## Licence
 GPL-3 only

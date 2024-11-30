@@ -1,3 +1,3 @@
 #!/bin/sh
 
-c99 -Wall -Wextra -o test main.c
+cc -Wall -Wextra -pedantic -ansi -std=c89 -o skandinav main.c
