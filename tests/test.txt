@@ -1,0 +1,10 @@
+foobar
+
+hello world
+
+åäö fungerar
+ÅÄÖ stora bokstäver
+
+€-tecken fungerar ej
+Norska stora bokstäver: ØÆÅ 
+Norska små bokstäver: æøå 
